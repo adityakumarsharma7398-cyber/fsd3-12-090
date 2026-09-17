@@ -1,9 +1,25 @@
-// we use in memory data-basae 
-
+// we use in memory database
 let users = [
-    {id:1,name :'Tony Stark' , mob:'7398xxxx', email:'tonystark1232@gmail.com'},
-        {id:2,name :'Steve Rogers' , mob:'7398xxxx', email:'RogersSteve1232@gmail.com'},
-]
+  {
+    id: 1,
+    name: "Amit Sharma",
+    mob: "98345xxxxx",
+    email: "amit.example@exam.com",
+  },
+  {
+    id: 2,
+    name: "Monika Verma",
+    mob: "92345xxxxx",
+    email: "moni.example@exam.com",
+  },
+];
 
 let nextId = 3;
-export const getUsers = ()=> users;
+
+export const getUsers = () => users;
+
+export const addUser = (user)=>{
+  user.id = nextId++;
+  users.push(user);
+  return user;
+};

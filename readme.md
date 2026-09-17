@@ -13,6 +13,7 @@ script {
 }
 ```
 7. add node_modules to .gitignore
+6. npm run i  //it will download all essential files required to run files
 8. to run use `npm run dev`
 
 in type : common => means program through oops and module means porgram through script
