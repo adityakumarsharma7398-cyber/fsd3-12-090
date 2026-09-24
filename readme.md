@@ -23,3 +23,21 @@ in type : common => means program through oops and module means porgram through 
 - REST API uses ( get , post , put , patch , delete) methon to communicate with client 
 - any browser can check only get method
 - for other methond type we use third party API tester like postman , thunder client , echo api etc
+
+## Request Type 
+
+### GET : getAll , getById
+* `/api/products`  ( get all products )
+* `/api/products/101` ( get product whose id is 101)
+
+### POST :
+* `/api/products` ( this means to add product in a database and  data will be shared from ecoAPI body section )
+
+### PUT/PATCH : 
+* `/api/products/201` ( to update the product in database whose id is 201 it will be updated in the body of ecoAPI )
+
+### DELETE :
+* `/api/product/110` ( to delete the product with id 110 )
+
+
+> NOTE : exported functions can be imported by other functions 
