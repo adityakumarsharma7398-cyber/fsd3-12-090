@@ -5,6 +5,11 @@ const app = express();
 app.get("/", (req, res) => {
 //   res.send("Hello Express");
 // res.send("<h1>hello express</h1>");
+res.send(`
+    <h1>Hello Server</h1>
+    <h2>i am responding from express framework </h2>
+    <h3>the code is minimal and easy to return </h3>
+    `)
 });
 
 // this line must be last line
