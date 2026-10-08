@@ -36,3 +36,6 @@ app.get("/", (req, res) => {
 app.listen(4444, () => console.log("prg1 is running at 4444"));
 
 ```
+# Static Import 
+* in express we can add any static html pages with the help of express.static method 
+* express support middle where, when we have to execute some functions before server execution then we use middlewhere , app.use always applied to insert any middlewhere 
