@@ -1,4 +1,21 @@
 import express from 'express';
+import { products } from './data';
+ const app = express();
+
+ // return name, image , price of all products
+ app.get("/api/products" , (res,req)=>{
+ 
+    let sortedProducts = products.map(({ name, image, price, id }) => ({
+      name,
+      image,
+      price,
+      id,
+    }));
+    res
+    .status(200)
+    .json({count:sortedProducts.length,data:sortedProducts})
+ })
+
 
 app.use((req,res)=>{
 res.status(404).send("<h1>Page not found </h1>");
